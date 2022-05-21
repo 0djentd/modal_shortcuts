@@ -1,6 +1,6 @@
 # Modal shortcuts
 ## Description
-This module provides some utility for modal operators.
+Some utility for UI-oriented modal operators.
 
 #### Features:
 *   Modal keyboard shortcuts.
@@ -18,7 +18,7 @@ This module provides some utility for modal operators.
 *   Automatic generation of new shortcuts without duplicates in name or mapping.
 
 #### TODO Planned features:
-    Correct UI property value display.
+* Correct UI property value display.
 
 ## How to use
 (WIP)
