@@ -1,6 +1,6 @@
 # Modal shortcuts
 ## Description
-Some utility for UI-oriented modal operators.
+Some utility for UI-oriented modal operators in Blender.
 
 #### Features:
 *   Modal keyboard shortcuts.

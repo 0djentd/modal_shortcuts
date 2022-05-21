@@ -589,6 +589,7 @@ def _vec_len(x1: float, x2: float, y1: float, y2: float) -> float:
 
 
 def _get_view3d():
+    """Returns first view3d instance"""
     a = None
     for x in bpy.context.window.screen.areas:
         if x.type == 'VIEW_3D':
@@ -602,6 +603,7 @@ def _get_view3d():
 
 
 def _get_view3d_window(v=None):
+    """Returns first view3d window instance"""
     if v is None:
         v = _get_view3d()
     a = None
