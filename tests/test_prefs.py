@@ -21,12 +21,12 @@ import unittest
 import copy
 import time
 
-from ..shortcuts import ModalShortcut
-from ..shortcuts import ModalShortcutsGroup
-from ..shortcuts import ModalShortcutsCache
-from ..shortcuts import generate_new_shortcut
-from ..shortcuts import _get_next_letter_in_shortcut_name
-from ..shortcuts import method_cache
+from src.shortcuts import ModalShortcut
+from src.shortcuts import ModalShortcutsGroup
+from src.shortcuts import ModalShortcutsCache
+from src.shortcuts import generate_new_shortcut
+from src.shortcuts import _get_next_letter_in_shortcut_name
+from src.shortcuts import method_cache
 
 
 class UtilsTests(unittest.TestCase):
