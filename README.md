@@ -28,11 +28,7 @@ Sublass `preferences.ModalShortcutsPreferences` in preferences panel, use `draw_
 
 # Installation
 Linux:
-```
-mkdir -p ~/.config/blender/3.1/scripts/modules
-cp -r modal_shortcuts ~/.config/blender/3.1/scripts/modules
-```
-Or install through `pip` for blender's python.
+Symlink `~/.config/blender/3.1/scripts/modules/modal_shortcuts` to `src`
 
 Windows:
 idk
