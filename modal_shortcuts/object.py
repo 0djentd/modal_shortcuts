@@ -30,8 +30,6 @@ except ModuleNotFoundError:
     _WITH_BPY = False
 
 logger = logging.getLogger(__name__)
-# logger.setLevel(logging.ERROR)
-logger.setLevel(logging.DEBUG)
 
 
 class ModalInputOperator():

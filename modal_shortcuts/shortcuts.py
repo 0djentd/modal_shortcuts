@@ -24,7 +24,6 @@ import logging
 import typing
 
 logger = logging.getLogger(__name__)
-logger.setLevel(logging.DEBUG)
 
 _MAPPING = ('event_type', 'shift', 'ctrl', 'alt')
 

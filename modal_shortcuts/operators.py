@@ -38,7 +38,6 @@ except ModuleNotFoundError:
     _WITH_BPY = False
 
 logger = logging.getLogger(__name__)
-logger.setLevel(logging.DEBUG)
 
 
 class EMTK_OT_start_editing_modal_shortcut(bpy.types.Operator):
