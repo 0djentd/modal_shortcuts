@@ -17,10 +17,7 @@
 #
 # ##### END GPL LICENSE BLOCK #####
 
-from .shortcuts import (ModalShortcut,
-                        ModalShortcutsGroup,
-                        ModalShortcutsCache)
-
-from .shortcuts import (deserialize_shortcut,
-                        deserialize_shortcuts_group,
-                        deserialize_shortcuts_cache)
+from .shortcuts import (ModalShortcut, ModalShortcutsCache,
+                        ModalShortcutsGroup, deserialize_shortcut,
+                        deserialize_shortcuts_cache,
+                        deserialize_shortcuts_group)

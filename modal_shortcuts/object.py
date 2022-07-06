@@ -17,9 +17,9 @@
 #
 # ##### END GPL LICENSE BLOCK #####
 
-import math
 import copy
 import logging
+import math
 import string
 import typing
 

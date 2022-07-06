@@ -17,16 +17,14 @@
 #
 # ##### END GPL LICENSE BLOCK #####
 
-import unittest
 import copy
 import time
+import unittest
 
-from modal_shortcuts.shortcuts import ModalShortcut
-from modal_shortcuts.shortcuts import ModalShortcutsGroup
-from modal_shortcuts.shortcuts import ModalShortcutsCache
-from modal_shortcuts.shortcuts import generate_new_shortcut
-from modal_shortcuts.shortcuts import _get_next_letter_in_shortcut_name
-from modal_shortcuts.shortcuts import method_cache
+from modal_shortcuts.shortcuts import (ModalShortcut, ModalShortcutsCache,
+                                       ModalShortcutsGroup,
+                                       _get_next_letter_in_shortcut_name,
+                                       generate_new_shortcut, method_cache)
 
 
 class UtilsTests(unittest.TestCase):

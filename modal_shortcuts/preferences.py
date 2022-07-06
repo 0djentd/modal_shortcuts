@@ -18,18 +18,13 @@
 # ##### END GPL LICENSE BLOCK #####
 
 try:
-    from bpy.props import (
-        BoolProperty,
-        IntProperty,
-        FloatProperty,
-        StringProperty,
-        EnumProperty,
-    )
+    from bpy.props import (BoolProperty, EnumProperty, FloatProperty,
+                           IntProperty, StringProperty)
     _WITH_BPY = True
 except ModuleNotFoundError:
     _WITH_BPY = False
 
-from .shortcuts import ModalShortcutsCache, ModalShortcut
+from .shortcuts import ModalShortcut, ModalShortcutsCache
 
 
 class ModalShortcutsPreferences():

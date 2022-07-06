@@ -19,20 +19,16 @@
 
 import logging
 
-from libemtk.utils.modifier_prop_types import get_all_editable_props
-from libemtk.utils.modifier_prop_types import MODIFIER_TYPES
+from libemtk.utils.modifier_prop_types import (MODIFIER_TYPES,
+                                               get_all_editable_props)
 
-from .shortcuts import generate_new_shortcut
-from .shortcuts import ModalShortcutsGroup, ModalShortcutsCache, ModalShortcut
+from .shortcuts import (ModalShortcut, ModalShortcutsCache,
+                        ModalShortcutsGroup, generate_new_shortcut)
 
 try:
     import bpy
-    from bpy.props import (
-        BoolProperty,
-        IntProperty,
-        FloatProperty,
-        StringProperty
-    )
+    from bpy.props import (BoolProperty, FloatProperty, IntProperty,
+                           StringProperty)
     _WITH_BPY = True
 except ModuleNotFoundError:
     _WITH_BPY = False

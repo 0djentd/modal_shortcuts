@@ -17,10 +17,10 @@
 #
 # ##### END GPL LICENSE BLOCK #####
 
-import json
-import string
 import functools
+import json
 import logging
+import string
 import typing
 
 logger = logging.getLogger(__name__)
