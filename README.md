@@ -28,7 +28,7 @@ Sublass `preferences.ModalShortcutsPreferences` in preferences panel, use `draw_
 
 # Installation
 Linux:
-Symlink `~/.config/blender/3.1/scripts/modules/modal_shortcuts` to `src`
+Symlink `~/.config/blender/3.1/scripts/modules/modal_shortcuts` to `modal_shortcuts`
 
 Windows:
 idk
