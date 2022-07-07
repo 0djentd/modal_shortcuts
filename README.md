@@ -1,4 +1,5 @@
-[![Python application](https://github.com/0djentd/modal_shortcuts/actions/workflows/python-app.yml/badge.svg)](https://github.com/0djentd/modal_shortcuts/actions/workflows/python-app.yml)
+[![Python package](https://github.com/0djentd/modal_shortcuts/actions/workflows/python-package.yml/badge.svg)](https://github.com/0djentd/modal_shortcuts/actions/workflows/python-package.yml)
+
 # Modal shortcuts
 ## Description
 Some utility for UI-oriented modal operators in Blender.
