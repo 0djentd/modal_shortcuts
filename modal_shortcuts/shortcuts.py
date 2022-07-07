@@ -23,7 +23,7 @@ import logging
 import string
 import typing
 
-from typing import List
+from typing import List, Tuple
 
 logger = logging.getLogger(__name__)
 
@@ -38,7 +38,7 @@ Cache is being cleared every time shortcuts are changed.
 """
 
 # TODO: create base class for shortcuts cache and shortcuts group.
-# TODO: check if cache actually working as expected.
+# TODO: check if Tache actually working as expected.
 
 # TODO:
 # Add 'value' as str in {'PRESS', 'RELEASE'}.
@@ -750,7 +750,7 @@ def generate_new_shortcut(shortcut_shortcut_id: str,
 
 @functools.lru_cache
 def _get_next_letter_in_shortcut_name(
-        shortcut_shortcut_id: str, index: int) -> tuple[int, str]:
+        shortcut_shortcut_id: str, index: int) -> Tuple[int, str]:
     """
     Example 1:
     >>> get_next_event_type_in_shortcut_name('angle_limit', 4)
