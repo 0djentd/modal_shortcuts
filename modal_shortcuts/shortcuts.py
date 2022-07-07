@@ -23,6 +23,8 @@ import logging
 import string
 import typing
 
+from typing import List
+
 logger = logging.getLogger(__name__)
 
 _MAPPING = ('event_type', 'shift', 'ctrl', 'alt')
@@ -542,7 +544,7 @@ class ModalShortcutsCache(CachedObject, ExtendedList):
     @method_cache
     def search_by_shortcut_id(
             self, shortcuts_group_value: str,
-            shortcut_shortcut_id: str) -> list[ModalShortcutsGroup]:
+            shortcut_shortcut_id: str) -> List[ModalShortcutsGroup]:
 
         shortcuts_group_value = shortcuts_groups_name_format(
             shortcuts_group_value)
@@ -581,7 +583,7 @@ def _check_event_type_type(val):
             return 'Expected event_type in [A-Z], got {val}'
 
 
-def find_duplicates(shortcuts: list[ModalShortcut]) -> list[ModalShortcut]:
+def find_duplicates(shortcuts: List[ModalShortcut]) -> List[ModalShortcut]:
     duplicates = []
     for x in shortcuts:
         if x in duplicates:
@@ -594,7 +596,7 @@ def find_duplicates(shortcuts: list[ModalShortcut]) -> list[ModalShortcut]:
     return duplicates
 
 
-def fix_duplicates(shortcuts: list[ModalShortcut]) -> list[ModalShortcut]:
+def fix_duplicates(shortcuts: List[ModalShortcut]) -> List[ModalShortcut]:
     shortcuts = shortcuts[:]
     for x in find_duplicates(shortcuts):
         shortcuts.remove(x)
@@ -621,7 +623,7 @@ def _str_repr_event(event):
 
 # Deserialization
 @functools.lru_cache(maxsize=8)
-def deserialize_shortcuts_cache(obj: str) -> list[ModalShortcutsGroup]:
+def deserialize_shortcuts_cache(obj: str) -> List[ModalShortcutsGroup]:
     obj = json.loads(obj)
     shortcuts_groups = []
     for x in obj:
