@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "modal_shortcuts"
-version = "0.1.1"
+version = "0.1.2"
 description = "Keyboard shortcuts for modal operators."
 authors = ["0djentd"]
 license = "GPL-3.0-or-later"
@@ -9,10 +9,9 @@ homepage = "https://github.com/0djentd/modal_shortcuts"
 repository = "https://github.com/0djentd/modal_shortcuts"
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.8"
 
 [tool.poetry.dev-dependencies]
-isort = "^5.10.1"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
