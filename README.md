@@ -1,4 +1,4 @@
-[![Python package](https://github.com/0djentd/modal_shortcuts/actions/workflows/python-package.yml/badge.svg)](https://github.com/0djentd/modal_shortcuts/actions/workflows/python-package.yml)
+[![Python package](https://github.com/0djentd/modal_shortcuts/actions/workflows/python-package.yml/badge.svg?branch=master)](https://github.com/0djentd/modal_shortcuts/actions/workflows/python-package.yml)
 
 # Modal shortcuts
 ## Description
